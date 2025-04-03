@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="./Index.Css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #0a7d23;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    height: 100px;
+}
+img{
+    width: 220px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 3px;
+    width: 500px;
+    border-radius: 15px;
+}
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 8px;
+}
+.search-box i {
+    color: #0a7d23;
+    margin-left: 5px;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+.nav-links .dropdown {
+    position: relative;
+}
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 130px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+.nav-links .dropdown-content a {
+    color: black;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.icons {
+    display: flex;
+    gap: 10px;
+}
+.icons i {
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+<body>
+    <nav class="navbar">
+        <img src="./IMG/logo.png" alt="Logo">
+        <div class="search-box">
+            <input type="text" placeholder="¿Qué estás buscando?">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="nav-links">
+            <a href="/4.Construccion/Prototipo del proyecto/Nosotros.html">Nosotros</a>
+            <div class="dropdown">
+                <a href="/4.Construccion/Prototipo del proyecto/producto.html">Productos</a>
+                <div class="dropdown-content">
+                    <a href="#Colagenos">Colagenos</a>
+                    <a href="#Citratos">Citratos</a>
+                    <a href="#Propoleos">Propoleos</a>
+                    <a href="#Drenadores hepaticos">Drenadores hepaticos</a>
+                    <a href="#Multivitaminicos">Multivitaminicos</a>
+                    <a href="#Purgantes">Purgantes</a>
+                </div>
+            </div>
+            <a href="/4.Construccion/Prototipo del proyecto/contacto.html">Contactanos</a>
+        </div>
+        <div class="icons">
+            <i class="fa fa-question-circle"></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+    </nav>
+    <div align="center">
+        <br><br>
+        <form >
+            <h2>Formulario</h2>
+            <br><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required>
+            <br><br>
+            <label for="correo">Correo:</label>
+            <input type="email" nombre="correo" required>
+            <br><br>
+            <label for="Asunto">Asunto: </label>
+            <textarea id="Asunto" name="Asunto" rows="" required></textarea>
+            <br><br>
+            <label for="Mensaje">Mensaje: </label>
+            <textarea id="text" name="Mensaje" rows="5"required></textarea>
+            <br>
+            <button class="Enviar" type="submit">Enviar</button>
+            <br><br>
+        </form>
+    <footer>
+        <p>&copy;Página Tienda Naturista Los girasoles 2025</p>
+    </footer>
+</body>
+</html>
